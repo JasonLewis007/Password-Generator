@@ -73,3 +73,21 @@ else {
   alert ("You have not chosen any upper case letters to have in your password");
 }
 
+//at least one character type should be selected
+
+if(passwordSpecialChar = !true && passwordNum === !true && passwordLowerCase === !true && passwordUpperCase === !true )
+alert("Please select one character type from each group!");
+
+//password combination
+
+if (passwordSpecialChar){
+  possibleChar = possibleChar.concat(specialChar);
+};
+
+if (passwordNum){
+  possibleChar = possibleChar.concat(num);
+}
+
+
+
+
