@@ -14,11 +14,12 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 //variables for characters
-function generatePassword{
-var specialChar ="! @ # $ % ^ & * ( ) / * - + < > ? ? : ; { } [ ] _ \ | =";
-var num = "0 1 2 3 4 5 6 7 8 9";
-var lowerCase = "a b c d e f g h i j k l m n o p q r s t u v w x y z ";
-var upperCase = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z ";
+function generatePassword() {
+var possibleChar = [];
+var specialChar = ["! @ # $ % ^ & * ( ) / * - + < > ? ? : ; { } [ ] _ \ | ="];
+var num = ["0 1 2 3 4 5 6 7 8 9"];
+var lowerCase = ["a b c d e f g h i j k l m n o p q r s t u v w x y z"];
+var upperCase = ["A B C D E F G H I J K L M N O P Q R S T U V W X Y Z"];
 };
 
 //prompt user to chose number of characters
@@ -26,7 +27,7 @@ var upperCase = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z ";
 numOfChar = prompt("Please choose the number of characters that you would like to use in your password.  Make sure the number is between 8 and 128 characters!")
  
 if (numOfChar < 8 || numOfChar > 128){
-  return "Please choose the correct number of characters!"
+  alert ("Please choose the correct number of characters!");
 }
 else{
   alert ("Your password will be " + numOfChar + " characters long!");
@@ -71,3 +72,4 @@ if (passwordUpperCase) {
 else {
   alert ("You have not chosen any upper case letters to have in your password");
 }
+
